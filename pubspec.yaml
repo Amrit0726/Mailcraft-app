@@ -43,7 +43,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.13.1 
+  flutter_launcher_icons: ^0.14.4
+  
 
 
 
@@ -98,8 +99,22 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_launcher_icons:
-  android: "ic_launcher"
+  android: true
   ios: true
   image_path: "assets/icon/app_icon.png"
   min_sdk_android: 21
   remove_alpha_ios: true
+
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#FFFFFF"
+    theme_color: "#1E40AF"
+
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+
+  macos:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
