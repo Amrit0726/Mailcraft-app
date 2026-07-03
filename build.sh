@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git clone https://github.com/flutter/flutter.git --depth 1
-export PATH="$PATH:`pwd`/flutter/bin"
+git clone https://github.com/flutter/flutter.git --depth 1 --branch 3.38.5
+export PATH="$PATH:$(pwd)/flutter/bin"
 
 flutter config --enable-web
 flutter pub get
